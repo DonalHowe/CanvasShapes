@@ -1,0 +1,40 @@
+<!DOCTYPE html>​
+<html lang="en-IE">​
+<head>​
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+    <script type="text/javascript" charset="utf-8">
+    function pageLoaded() {
+    var canvas = document.getElementById("the_canvas");
+
+    var context = canvas.getContext("2d");
+
+
+
+    context.beginPath();
+    context.moveTo(10, 120);
+    context.lineTo(10, 180);
+    context.lineTo(110, 150);
+    context.fill();
+
+    context.fillRect(150, 100, 100, 100);
+
+    context.beginPath();
+    context.arc(350,200,40,0,Math.PI,true);
+    context.stroke();
+    context.fill();
+
+
+
+
+    }
+    </script>
+</head>​
+
+<body onload="pageLoaded()">​
+
+<h1> Shapes Test </h1>
+ <canvas id="the_canvas" width="1000" height="800" style="border: black 1px solid;">
+    Oops! looks like your browser does not support canvas tag
+    </canvas>
+</body>​
+</html>​
