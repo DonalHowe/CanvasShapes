@@ -23,6 +23,19 @@
     context.stroke();
     context.fill();
 
+	<!-- drawing a Diamond-->
+	context.beginPath();
+	context.moveTo(30,420);
+	context.lineTo(10,450);
+	context.lineTo(30,480);		
+	context.lineTo(50,450);
+	
+	context.fill();
+
+context.beginPath();
+    context.arc(350,200,40,40,Math.PI,true);
+    context.stroke();
+    context.fill();
 
 
 
